@@ -4,6 +4,18 @@
          <%- include("../partials/navbar")%>
     </header>
     <main>
-
+        <% if (cont != 6) {%>
+        <div style="display: flex; flex-direction: column; gap: 15%; margin: 10%; background-color: rgba(225, 89, 214, 0.315); height: 60vh; border: double darkblue; padding: 10px">
+        <div>
+            <h1 style="text-align: center;"> <%=questoes[cont].pergunta%> </h1>
+        </div>
+        <div class="respostas">
+            <button onclick="window.location.href='/quiz_personalidade/<%=parseInt(cont)+1%>/0'" style="background-color: rgba(227, 127, 255, 0.575);"> <%=questoes[cont].respostas[0]%> </button>
+            <button onclick="window.location.href='/quiz_personalidade/<%=parseInt(cont)+1%>/1'" style="background-color:  rgba(127, 255, 212, 0.541);"> <%=questoes[cont].respostas[1]%> </button>
+            <button onclick="window.location.href='/quiz_personalidade/<%=parseInt(cont)+1%>/2'" style="background-color:  rgba(255, 210, 127, 0.598);"> <%=questoes[cont].respostas[2]%> </button>
+            <button onclick="window.location.href='/quiz_personalidade/<%=parseInt(cont)+1%>/3'" style="background-color:  rgba(127, 200, 255, 0.491);"> <%=questoes[cont].respostas[3]%> </button>
+        </div>
+        </div>
+        <%}%>
     </main>
 </body>

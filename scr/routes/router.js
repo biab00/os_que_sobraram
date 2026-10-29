@@ -8,9 +8,7 @@ rota.get("/", (req, res) => {
     res.render("pages/index")
 })
 
-rota.get("/quiz_personalidade", (req, res) => {
-    res.render("pages/quiz1")
-})
+rota.get("/quiz_personalidade/:cont/:value", controller.quiz1)
 
 rota.get("/historias", controller.historias)
 

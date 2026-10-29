@@ -16,23 +16,23 @@ var historias = [
     },
     {
         nome: "Dorothy Vaughan",
-        imagem: "",
+        imagem: "Dorothy_Vaughan.jpg",
         realizacoes: "Matemática afro-americana pioneira na NASA, destacou-se pela liderança de equipes de mulheres negras e pela atuação na transição para a computação eletrônica"
     },
     {
         nome: "Djamila Ribeiro",
-        imagem: "",
+        imagem: "Djamila_Ribeiro.jpg",
         realizacoes: "Filósofa, escritora e ativista brasileira que promove o feminismo negro, o combate ao racismo e a democratização do conhecimento."
     },
     {
         nome: "Gabrielle Weber",
-        imagem: "",
+        imagem: "Gabrielle_Weber.jpg",
         realizacoes: "Física e professora da USP que atua em pesquisas de física teórica, divulgação científica e iniciativas de inclusão e diversidade na ciência.",
         tipo: ["Exploração", "Conhecimento", "Inclusão"]
     },
     {
         nome: "Sônia Guimarães",
-        imagem: "",
+        imagem: "Sonia_Guimarães.jpg",
         realizacoes: "Primeira mulher negra brasileira doutora em Física (pela Universidade de Manchester) e primeira professora mulher do ITA (Instituto Tecnológico de Aeronáutica), atuando em física aplicada e semicondutores."
     },
     {
@@ -42,19 +42,31 @@ var historias = [
     },
     {
         nome: "Jane Goodall",
-        imagem: "",
+        imagem: "Jane_Goodall.jpg",
         realizacoes: "Revolucionou a primatologia e o comportamento animal ao demonstrar que chimpanzés usam ferramentas, têm personalidades e possuem laços sociais complexos."
     },
     {
         nome: "Thaisa Storchi Bergmann",
-        imagem: "",
+        imagem: "Thaisa_Storchi.jpg",
         realizacoes: "Astrofísica brasileira reconhecida mundialmente por suas pesquisas sobre buracos negros supermassivos no centro das galáxias."
     },
     {
         nome: "Marie Tharp",
-        imagem: "",
+        imagem: "Marie_Tharp.jpg",
         realizacoes: "Geóloga e cartógrafa oceânica que criou o primeiro mapa científico do assoalho oceânico do Atlântico, provando a teoria da tectônica de placas e da deriva continental."
     }
 ]
 
-module.exports = {historias}
+quiz_personalidade = {
+    dj: 0,
+    mcr: 0, 
+    mtp: 0,
+    sgu: 0,
+    tts: 0,
+    tht:0,
+    glw: 0,
+    drv:0,
+    jgl: 0,
+}
+
+module.exports = {historias, quiz_personalidade}

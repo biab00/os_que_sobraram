@@ -13,6 +13,7 @@
                 <div id="div_1">
                     <div>
                         <h3><%=historias[i].nome %></h3>
+                        <% if (historias[i].imagem == ""){ historias[i].imagem = "sem_foto.png" } %>
                         <img src="img/personas/<%=historias[i].imagem%>" width="100%" height="auto">
                     </div>
                     <h4>...</h4>
