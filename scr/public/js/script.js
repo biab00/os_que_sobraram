@@ -67,6 +67,8 @@ quiz_personalidade = {
     glw: 0,
     drv:0,
     jgl: 0,
+    adl: 0,
+    jge: 0
 }
 
 module.exports = {historias, quiz_personalidade}
