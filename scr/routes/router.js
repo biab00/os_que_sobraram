@@ -22,4 +22,10 @@ rota.get("/quiz_conhecimentos", (req, res) => {
     res.render("pages/quiz_geral")
 })
 
+rota.get("/formulario", (req, res) => {
+    res.render("pages/formulario")
+})
+
+rota.post("/formulario", controller.formulario)
+
 module.exports = rota

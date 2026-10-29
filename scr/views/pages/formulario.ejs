@@ -1,0 +1,38 @@
+<%- include("../partials/head")%>
+
+<body>
+    <%- include("../partials/navbar")%>
+    <main style="flex-direction: row; flex-wrap: nowrap;">
+        <div style="width: 25%">
+            oi
+        </div>
+        <form action="/formulario" method="POST">
+            <div style="display: flex; align-items: center; gap: 5px">
+                <img src="img/simbolos/usuario.png" width="20px">
+                <label>Nome da Cientista</label>
+            </div>
+            <input placeholder="Quem é ela?">
+            <div style="display: flex; align-items: center; gap: 5px">
+                <img src="img/simbolos/documento.png" width="20px">
+                <label>Breve resumo</label>
+            </div>
+            <textarea style="height: 15vh; border: none; border-radius: 10px;" placeholder="Digite brevemente sobre as principais contribuições dessa mulher para a ciência"> </textarea>
+            <div style="display: flex; align-items: center; gap: 5px">
+                <img src="img/simbolos/imagem.png" width="20px">
+                <label>Imagem da Cientista</label>
+            </div>
+            <label for="arquivo" class="upload">Escolher Arquivo</label>
+            <input type="file" id="arquivo" style="display: none">
+            <div style="display: flex; align-items: center; gap: 5px">
+                <img src="img/simbolos/lápis.png" width="20px">
+                <label>Nome do autor da submissão</label>
+            </div>
+            <input placeholder="Digite seu nome">
+
+            <button type="submit" style="display: flex; align-items: center; justify-content: center; gap: 5px; width: 50%; align-self: center;"><img src="img/simbolos/envio.png" width="20px"> Enviar história </button>
+        </form>
+        <div style="width: 25%">
+            oi
+        </div>
+    </main>
+</body>

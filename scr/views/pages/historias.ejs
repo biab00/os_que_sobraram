@@ -4,15 +4,22 @@
          <%- include("../partials/navbar")%>
     </header>
     <main>
-        <% for(let i = 0; i < historias.length; i++) {%>
-            <div>
-                <div>
-                    <h3><%=historias[i].nome %></h3>
-                    <img>
+        <h1 style="font-family: zeta;">Cientistas!</h1>
+        <h2>aquelas que investigam sistematicamente fenômenos da natureza, da sociedade ou da tecnologia para gerar novos conhecimentos</h2>
+        <h2 style="font-family: Lucida Sans;"> Conheça o trabalho de algumas mulheres da nossa história </h2>
+        <h2>Lembrou de alguma inspiração? <a href="/formulario"> clique aqui </a> para enviar novas personalidades da ciência</h2>
+        <div class="historias">
+            <% for(let i = 0; i < historias.length; i++) {%>
+                <div id="div_1">
+                    <div>
+                        <h3><%=historias[i].nome %></h3>
+                        <img src="img/personas/<%=historias[i].imagem%>" width="100%" height="auto">
+                    </div>
+                    <h4>...</h4>
+                    <h4 style="text-align:justify;"><%=historias[i].realizacoes%></h4>
                 </div>
-                <h4><%=historias[i].biografia %></h4>
-                <h4><%=historias[i].realizacoes%></h4>
-            </div>
-        <%}%>
+            <%}%>
+        </div>
+        
     </main>
 </body>

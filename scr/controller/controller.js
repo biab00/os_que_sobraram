@@ -1,8 +1,12 @@
 
 
-const historias = async (req,res) => {
-    const {historias} = await require("../public/js/script")
+const historias =  (req,res) => {
+    const {historias} = require("../public/js/script")
     res.render("pages/historias", {historias})
 }
 
-module.exports = {historias}
+const formulario = (req, res) => {
+    
+}
+
+module.exports = {historias, formulario}
